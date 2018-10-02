@@ -1,0 +1,71 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Arial;}{\f6\fnil\fprq2\fcharset0 WenQuanYi Micro Hei;}{\f7\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f8\fnil\fprq0\fcharset128 Lohit Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140\loch\f5\fs20 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af8\loch\f5\fs20 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af8\afs24\ai\loch\f5\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af8\loch\f5\fs20 Index;}
+}{\*\generator LibreOffice/5.1.6.2$Linux_X86_64 LibreOffice_project/10m0$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\author Norman Dunbar}{\revtim\yr2018\mo10\dy2\hr8\min56}{\printim\yr0\mo0\dy0\hr0\min0}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn2287\margrsxn2518\margtsxn1440\margbsxn720\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl2287\margr2518\margt1440\margb720\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn2287\margrsxn2518\margtsxn1440\margbsxn720\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep}\pgndec\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\li2285\ri4627\lin2285\rin4627\fi0\sb0\sa0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\tx6000\li0\ri0\lin0\rin0\fi0\sb38\sa0\cbpat8{\cf1\expnd0\expndtw-2\i\b\charscalex126\rtlch \ltrch\loch\fs18\lang2057
+EASYPTR 3  }{\cf1\expnd0\expndtw-2\i0\b\charscalex126\rtlch \ltrch\loch\fs18\lang2057
+Library Routines}{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+\tab Part III    247}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li576\ri0\lin576\rin0\fi0\sb336\sa0\cbpat8{\cf1\expnd-3\expndtw-15\i0\b\charscalex100\rtlch \ltrch\loch\fs30\lang2057
+111.4 The EASYMENu Control Library Routines}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li562\ri0\lin562\rin0\fi0\sb211\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+There are two libraries:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li562\ri806\lin562\rin806\fi1325\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+easymenClib }{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+is intended for the C programmer as the routines in this library take the parameters from the stack. And}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li557\ri403\lin557\rin403\fi1334\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+easymenCasmJib }{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+which is intended to be used from assembler, as these routines take the parameters from the registers.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li552\ri0\lin552\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Both, the assembler- and the C-programmer may take great advantage of the very easy way to create a menu controlled program.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li552\ri0\lin552\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+The }{\cf1\expnd0\expndtw0\i\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+easymenClib }{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+routines follow the left to right parameter passing convention (see below) and thus can be used with the Metacomco Lattice C and the C68 compilers as well (and naturally with any other C-compiler using the same convention).}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li552\ri0\lin552\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+If these routines are called from assembler (which is also possible), the assembler programmer has to ensure himself that the parameters are passed on the stack in the right order.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li557\ri0\lin557\rin0\fi0\sb221\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+The description of the functions is valid both for C and assembler.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li552\ri0\lin552\rin0\fi0\sb197\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs24\lang2057
+Attention:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li547\ri0\lin547\rin0\fi0\sb10\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+The routines have different prefixes. The meanings are}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-216\slmult0\ql\tx2458\li562\ri0\lin562\rin0\fi0\sb226\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Prefix}{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+\tab }{\cf1\expnd-2\expndtw-10\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+EM}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-216\slmult0\ql\li552\ri0\lin552\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+All EM_ routines are standard routines to setup and control a menu definition. }{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+These routines must only be used on a menu setup with EM_SETUP}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-216\slmult0\ql\tx2501\li562\ri0\lin562\rin0\fi0\sb226\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Prefix}{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+\tab }{\cf1\expnd-2\expndtw-12\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+EU}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-216\slmult0\ql\li557\ri0\lin557\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+All EU_ routines are utility routines which are not directly coupled with a menu definition.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\tx2501\li562\ri0\lin562\rin0\fi0\sb216\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Prefix\tab }{\cf1\expnd0\expndtw-3\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+EW}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li552\ri0\lin552\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+All EW_ routines can be used on any standard menu working definition, i.e. on a definition set up with EM_SETUP or on a definition set up using the standard window manager routines as well.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\tx2496\li562\ri0\lin562\rin0\fi0\sb216\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Prefix}{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+\tab }{\cf1\expnd-1\expndtw-6\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+El}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li547\ri0\lin547\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+The library also contains these routines, which prepare parameters for}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li562\ri0\lin562\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+internal routines written in C. The descriptions can be found in chapter 3.}
+\par }

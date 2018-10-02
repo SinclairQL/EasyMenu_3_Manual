@@ -1,0 +1,123 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Arial;}{\f6\fnil\fprq2\fcharset0 WenQuanYi Micro Hei;}{\f7\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f8\fnil\fprq0\fcharset128 Lohit Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140\loch\f5\fs20 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af8\loch\f5\fs20 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af8\afs24\ai\loch\f5\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af8\loch\f5\fs20 Index;}
+{\s20\sbasedon0\snext20\loch\f5\fs20 Table Contents;}
+{\s21\sbasedon20\snext21\loch\f5\fs20 Table Heading;}
+}{\*\generator LibreOffice/5.1.6.2$Linux_X86_64 LibreOffice_project/10m0$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\author Norman Dunbar}{\revtim\yr2018\mo10\dy2\hr11\min2}{\printim\yr0\mo0\dy0\hr0\min0}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\lndscpsxn\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8828\margtsxn710\margbsxn360\pgdscnxt0 Default Style;}}
+\formshade\landscape\paperh11906\paperw16838\margl3436\margr8828\margt710\margb360\sectd\sbknone\sectunlocked1\lndscpsxn\pgndec\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8828\margtsxn710\margbsxn360\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep}\pgndec\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+EASYPTR }{\cf1\expnd0\expndtw0\i\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+3   }{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Library Routines}
+\par \column\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Part III    261}
+\par \sect\sectd\sectunlocked1\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8812\margtsxn710\margbsxn360\ltrsect\sbknone\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\qr\li0\ri19\lin0\rin19\fi0\sb336\sa0\cbpat8{\cf1\expnd0\expndtw-4\i0\b\charscalex100\rtlch \ltrch\loch\fs38\lang2057
+EM RPTR}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li43\ri0\lin43\rin0\fi0\sb202\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Description}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li57\ri-1644\lin57\rin-1644\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Start pointer read on a menu window setup with EM_SETUP. On return from EM_RPTR either an error is reported or if there was none, the result area can be used to decide what happened. The address of the result area was returned by EM_SETUP.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li57\ri-1531\lin57\rin-1531\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+The return may be caused by an action or hit routine or a window event as passed with EM_RPTR in the event byte where each bit represents an event. The window events passed with EM_RPTR overwrite internal window event action routines set by EM_SETUP, e.g. if there was an item with the selection key 5 in the menu definition, then EM_SETUP will have set the internal move window action routine for this item. But if with EM_RPTR the move bit in the event byte was set, then the internal move window action will not be performed and EM_RPTR will return.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li57\ri-1644\lin57\rin-1644\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Thus it is possible to decide with each call to EM_RPTR, whether an event shall be performed internally, cause a return (e.g. to perform a special action as required by the actual program status) or to be ignored. Possible window events are:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-1\slmult0\sb0\sa211\rtlch \ltrch\loch\fs2
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\li0\ri538\lin0\rin538\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+
+\par \trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Bit}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Value}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Selection Key}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Selection Key Code}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Meaning}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+0}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+1}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+DO/ENTER}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+2}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+DO}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+1}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+2}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+ESC}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+3}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Cancel}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+2}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+4}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+F1}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+4}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+help}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+3}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+8}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+CTRL F4}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+5}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Move Window}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+4}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+16}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+CTRL F3}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+6}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Change Size}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+5}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+32}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+CTRL F1}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+7}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Sleep}\cell\row\pard\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx382\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx933\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx1957\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx3363\clpadfl3\clpadl55\clpadft3\clpadt55\clpadfb3\clpadb55\clpadfr3\clpadr55\cellx4590\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+6}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+64}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+CTRL F2}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+8}\cell\pard\plain \s20\loch\f5\fs20\intbl{\rtlch \ltrch\loch
+Wake}\cell\row\pard\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\li0\ri538\lin0\rin538\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+\tab \tab }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li34\ri0\lin34\rin0\fi0\sb202\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Parameter declarations}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\li0\ri538\lin0\rin538\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+short  event;}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-221\slmult0\ql\li0\ri538\lin0\rin538\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\ab0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+long err,workdef;\tab }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li34\ri0\lin34\rin0\fi0\sb202\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Function call}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li34\ri0\lin34\rin0\fi0\sb10\sa221\cbpat8{\cf1\expnd0\expndtw-1\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+err = em_rptr (workdef,event)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li34\ri0\lin34\rin0\fi0\sb10\sa221\cbpat8{\cf1\expnd0\expndtw-1\i0\b\ab\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Function return}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li34\ri0\lin34\rin0\fi0\sb10\sa221\cbpat8{\cf1\expnd0\expndtw-1\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+err \u8594\'3f 2.2\tab =27\tab menu removed}
+\par \sect\sectd\sectunlocked1\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8828\margtsxn710\margbsxn360\cols2\colno1\colw104\colsr164\colno2\colw4305\ltrsect\sbknone\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-226\slmult0\ql\tx1123\li0\ri403\lin0\rin403\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\li0\ri-1984\lin0\rin-1984\fi0\cbpat8{\b\ab\rtlch \ltrch\loch\lang2057
+On return from M_}{\b\ab\rtlch \ltrch\loch\lang2057
+RPTR the result area is set -> 5.0.}
+\par \sect\sectd\sectunlocked1\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8828\margtsxn710\margbsxn360\ltrsect\sbknone\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\sl-1\slmult0\sb0\sa197\rtlch \ltrch\loch\fs2
+
+\par \trowd\trql\trleft-40\ltrrow\trrh-211\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx670\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx3121\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvmgf\clvertalt\cellx4534\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+Parameter}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li10\ri0\lin10\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+call}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li82\ri0\lin82\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+return}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li82\ri0\lin82\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+0}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li82\ri0\lin82\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+0}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li82\ri0\lin82\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+\cell\row\pard\trowd\trql\trleft-40\ltrrow\trrh-230\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx670\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx3121\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvmrg\clvertalt\cellx4534\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+workdef}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li14\ri0\lin14\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+address of working definition}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li14\ri0\lin14\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li14\ri0\lin14\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+\cell\row\pard\trowd\trql\trleft-40\ltrrow\trrh-413\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx670\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvertalt\cellx3121\clpadft3\clpadt40\clpadfr3\clpadr40\clcbpat8\clvmrg\clvertalt\cellx4534\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li0\ri0\lin0\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw0\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+event}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li19\ri0\lin19\rin0\fi0\sb0\sa0\cbpat8{\cf1\expnd0\expndtw-1\i0\b0\charscalex100\rtlch \ltrch\loch\fs18\lang2057
+event to return (bit set as defined above)}\cell\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li19\ri0\lin19\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\intbl\ql\li19\ri0\lin19\rin0\fi0\sb0\sa0\cbpat8\rtlch \ltrch\loch
+\cell\row\pard\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f5\fs20\lang2057\rtlch \ltrch\loch
+
+\par \sect\sectd\sectunlocked1\pgwsxn16838\pghsxn11906\marglsxn3436\margrsxn8828\margtsxn710\margbsxn360\pgndec\sbknone}

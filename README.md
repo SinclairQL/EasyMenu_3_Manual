@@ -5,7 +5,7 @@ The repository holds a number of text files, being the scanned and OCR'd pages o
 
 The JPEGS folder/directory contains a 17.2 MB zipped copy of the original JPEGs that were OCR'd. These were created in high quality, 300 dpi format. There is one file per page.
 
-Dilwyn has scanned and OCR'd pages 159 to 246 of the manual into a pair of Word `*.docx` format files.
+Dilwyn has scanned and OCR'd pages 159 to 246 of the manual into a pair of Word `*.docx` format files. My own efforts resulted in the various *.txt files and corresponding *.doc files. The *.txt files are straight off the OCR and are probably not 100% accurate - beware. The *.doc appear to be in rtf format, and have had a little massaging to correct obvious errors in the OCR process.
 
 _All_ of the files will need tidying up. OCR is far from perfect, but is a tad better than typing everything back in.
 

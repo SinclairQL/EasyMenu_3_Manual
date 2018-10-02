@@ -1,0 +1,48 @@
+EASYPTR3 Library Routines Partlll 279
+
+ 
+
+Description
+Set mouse acceleration and wakeup speed.
+
+EU_SMAWS
+
+The function sets the corresponding values into the pointer interface linkage
+block. As this takes affect for the whole system, a program should eventually
+save the old values (-> EU_RMAWS) and restore them.
+
+Parameter declarations
+
+short accel,wakeup;
+long chid;
+Function call
+
+err: eu_smaws (accel,wakeup,chid)
+
+Function return
+err -> 2.2
+
+Parameter call
+
+accel mouse acceleration range 0 to 9
+wakeup mouse wakeup speed range 0 to 9
+chid channel ID
+
+Assembler eu_smaws
+
+d0 ?
+d1 mouse acceleration
+d2 mouse wakeup speed
+
+a0 chid
+
+return
+0
+Q
+Q
+
+equmaws
+error code
+
+ 
+

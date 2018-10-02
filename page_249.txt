@@ -1,0 +1,29 @@
+EASYPTR3 Library Routines Part III 249
+
+ 
+
+4.1 Internal routines (C only)
+
+Principally the handling of internal routines by the EASYMENC Library Routines
+is the same as described in chapter 3.1.
+
+Additionally if a pointer to an internal routine in the EASYMENU generated menu
+definition is zero, then EM_SETUP will replace it by it's own routine. if the pointer
+is not zero, then EM_SETUP assumes that you have an own routine there and
+sets this routine.
+
+More detailed information about the handling of action routines is given in 4.5.
+
+4.2 Register A5 and A6
+
+Registers A5 and A6 are in no way affected by the EASYMENU Library Routines.
+Thus e.g. they can be used to point to private data areas accessible from within
+the internal setup or action routines.
+
+For C this principally means, that local parameters of the calling routine would be
+accessible from within internal routines.
+
+4.3 Address Pointers (C only)
+For QDOS we generally assume address pointers to be long integers!
+
+

@@ -1,0 +1,145 @@
+314_ > Part in
+
+EASYPTR 3 Library Routines
+
+ 
+
+eu.pwmak euXpwmak
+
+a0
+eu.pwtst
+a0
+ew.awinf
+d1
+
+a1
+
+a3
+
+a4
+ew.awsct
+on
+
+d2”
+
+a1
+
+a2
+
+a3
+
+a4
+ew.clchg
+al
+
+a
+
+at
+éii'ii.drbdr
+d1 .I
+
+a0
+
+.a1
+
+a2
+
+a4
+.feu.rmaws
+d1
+
+d2
+
+a0
+eu.'smaws
+an
+
+6,2
+
+a0
+eu.unman
+a0
+
+chid or -1
+
+euXpwtst
+
+’?
+
+eanwinf
+sub-window number
+'7
+
+7
+
+pointer to working definition
+eanwsct
+
+start row
+
+start column
+
+pointer to pan control block (or 0, -1)
+pointer to scroll ctrl block (or O, -‘l)
+
+ptr. to sub-win. def.+$64 (wwa_mstt)
+running pointer to working definition
+
+echlchg
+?
+
+ptr. to sub-window def. or O for loose
+
+pointer to working definition
+ederbdr
+
+border colour or -1 to clear
+9
+
+‘?
+
+pointer to window manager
+pointer to working definition
+'eueraws
+
+?
+
+?
+
+chid
+
+equmaws
+
+mouse acceleration to set
+mouse wakeup speed to set
+chid
+
+euXunman
+
+chid
+
+primary chid
+primary chid
+
+pointer to menu status bytes
+pointer to sub-window def.
+
+pointer to pan control block
+pointer to scroll control block
+
+updated
+
+pointer to item status bytes
+
+chid
+pointer to status area
+
+M ii
+
+actual mouse acceleration
+actual mouse wakeup speed
+
+II II ll
+
+ 
+

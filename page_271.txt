@@ -1,0 +1,46 @@
+EASYPTR3 Library Routines Part III 271
+
+EM_SWSEC
+
+ 
+
+Description
+
+Set the WINDOW size and position of the menu channel to an application sub—
+window menu section
+
+If ink==-1, then only the area is set, otherwise the paper and ink colours are set
+and the over status is set to 0.
+
+Parameter declarations
+
+short applnum,ink,xsecnum,ysecnum;
+long err,workdef;
+Function call
+
+err: em_swsec (workdef,applnum,ink,xsecnum,ysecnum)
+
+Function return
+
+err -> 2.2
+Parameter call return
+workdef address of working definition 9
+applnum application sub-window number Z
+ink -1 set window area only G
+
+or
+
+ink colour (the paper colour is taken from
+the window definition)
+
+xsecnum x section number
+
+ysecnum y section number
+
+SQ
+
+Assembler
+Push parameters and call EM_SWSEC or use wm.swsec.
+
+ 
+

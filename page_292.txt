@@ -1,0 +1,35 @@
+292 Part III EASYPTR 3 Library Routines
+
+ 
+
+/* Pannable or scrollable application sub-window control block definition.
+* The index definitions are not yet managed by the actual version of the
+window manager!*/
+
+*
+
+struct wda_pcrl {
+
+short wda_part; /* pointer to part window control
+block for pan, scroll and split */
+
+short wda_insz; /* index hit size + scaling */
+
+short wda_insp; /* index spacing left of sub-window
++ scaling */
+
+short wda_icur; /* index current item border width */
+
+short wda_icurc; /* index current item border colour */ A
+
+struct wd‘atrec wda_iiat; /* index item attribute record */
+
+short wda_psac; /* pan/scroll arrow colour */
+
+short wda_psbc; /* pan/scroll bar background colour
+*/
+
+short wda_pssc; /* pan/scroll bar section colour */
+
+ 
+

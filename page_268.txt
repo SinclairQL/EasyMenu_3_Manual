@@ -1,0 +1,33 @@
+268 Part Ill EASYPTR 3 Library Routines
+
+ 
+
+EM_SWIOB
+
+Description
+Set the WINDOW size and position of the menu channel to an information object.
+
+Parameter declarations
+short infonum,inobnum,ink;
+long err,workdef;
+
+Function call
+err: em_swiob (workdef,infonum,ink,inobnum)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition 6
+infonum information sub-window number Q
+
+ink ink colour to set E
+inobnum information object number 0
+
+Assembler
+
+Push parameters and call EM__SWIOB.
+
+ 
+

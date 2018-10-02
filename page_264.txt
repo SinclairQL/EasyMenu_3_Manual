@@ -1,0 +1,41 @@
+264 Part"! EASYPTR 3 Library Routines
+
+ 
+
+EM_SWAM I
+
+Description
+Set the WINDOW size and position of the menu channel to the last selected
+application sub—window menu item.
+
+Parameter declarations
+
+short applnum,stat;
+long err,workdef;
+Function call
+
+err = em_swami (workdef,applnum,stat)
+
+Function return
+
+err -> 2.2
+
+Parameter call ' return
+workdef address of working definition _ Q
+applnum application sub-window number 6
+
+stat item status which colours to set (3
+
+0 available colours
+16 unavailable colours
+128 selected colours
+
+Special error code meaning
+-15 err.ipar last selection was not an application sub-window
+menu item
+
+Assembler
+Push parameters and call EM__SWAMl.
+
+ 
+

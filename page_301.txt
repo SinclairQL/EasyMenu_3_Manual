@@ -1,0 +1,51 @@
+EASYPTR3 Library Routines Part III 301
+
+ 
+
+/* Information object definition
+
+ 
+
+* The object types for information objects and loose menu items are:
+* -n text underline n.th character
+* 0 text no underline
+* 2 sprite
+* 4 blob
+* 6 pattern
+*/
+struct wwo_inob{
+short wwo_xsiz; /* object x size */
+short wwo_ysiz; /* object y size */
+short wwo_xorg; /* object x origin */
+short wwo_yorg; /* object y origin */
+char wwo_type; /* object type */
+char wwo_spar; /* spare */
+union wwo_txco{
+struct wwo_txta {
+short wwo_ink; /* text object ink */
+char wwo_csiz[2] /* text character x/y sizes */
+} wwo_txat;
+long *wwo_comb; /* ptr to pattern or blob to combine */
+} wwo_txcv;
+long wwo_pobj; /* pointer to object/
+
+};
+
+/* The information object list is an array of information object
+* definitions + 1 dummy element with wwo_xsize==-1 which signals
+* the end of the list
+
+*
+
+ 
+
+*/
+
+#if UNLOCK
+
+struct wwo_inob *wwo_iobl[NUMlNOB+1];
+
+#endif
+
+ 
+

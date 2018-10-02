@@ -1,0 +1,31 @@
+EASYPTR 3 Library Routines Part lll 273
+
+EU_CSTRQ
+
+ 
+
+Description
+Copy C string (terminated by NUL) to QDOS string (with leading length word).
+
+Parameter declarations
+
+char *cstring;
+struct qdosstring {
+short length;
+char stringﬂ;
+} *qstring;
+Function call
+void eu_cstrq (cstring,qstring)
+
+Function return
+
+none
+Parameter call return
+cstring address of C string
+
+ll ll
+
+qstring address of QDOS String
+
+ 
+

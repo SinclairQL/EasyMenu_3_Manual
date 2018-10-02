@@ -1,0 +1,55 @@
+EASYPTR3 Library Routines Part lll 261
+
+Hews“ EM_RPTR
+
+ 
+
+Description
+Start pointer read on a menu window setup with EM_SETUP. On return from
+EM_RPTR either an error is reported or if there was none, the result area can be
+used to decide what happened. The address of the result area was returned by
+EM_SETUP.
+The return may be caused by an action or hit routine or a window event as
+passed with EM_RPTR in the event byte where each bit represents an event.
+The window events passed with EM_RPTR overwrite internal window event
+
+2 action routines set by EM_SETUP, e.g. if there was an item with the selection
+key 5 in the menu definition, then EM_SETUP will have set the internal move
+window action routine for this item. But if with EM_RPTR the move bit in the
+event byte was set, then the internal move window action will not be performed
+and EM_RPTR will return.
+Thus it is possible to decide with each call to EM_RPTR, whether an event shall
+be performed internally, cause a return (e.g. to perform a special action as
+required by the actual program status) or to be ignored.
+Possible window events are:
+
+ 
+
+_B_i1 value selection kev selection key code meaning
+0 1 DO/ENTER 2 TO 52 5&— U DO
+1 2 E80 3 M EASMel-L' . cancel
+2 4 F1 4 _ help
+3 8 CTRL F4 5 (iv agar—P5, move window
+4 16 CTRL F3 6 change size
+5 32 CTRL F1 7 sleep
+6 64 CTRL F2 8 wake
+Parameter declarations
+short event;
+’T‘ long err,workdef;
+Function call
+
+err = em_rptr (workdef,event)
+
+Function return
+err -> 2.2 :27 menu removed
+
+On return from EM_RPTR the result area is set -> 5.0.
+
+Parameter call return
+workdef address of working definition Q
+event event to return (bit set as defined above) 6
+
+...EM_RPTR
+
+ 
+

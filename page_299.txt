@@ -1,0 +1,60 @@
+EASYPTR3 Library Routines Part III 299
+
+ 
+
+/* Window working definition header and window definition
+
+* ———————————————
+
+*
+
+The definition normally is setup using wm.setup.
+
+The channel ID is filled in as passed to wm.setup.
+
+For a secondary window wm.pulld fills in ww_chid and sets
+ww_pulld to -1.
+
+The pointer position in ww_psave is used by wm.unset to restore
+the old position when the menu is removed.
+
+it- ?! 5" 3" 3(- X-
+
+* The pointer sd_wwdef in the extended channel definition block
+* points to ww_splst. This pointer is filled in by wm.prpos or
+* iop.swdf and cleared by wm.unset.
+* ww_splst points to the application sub—window list.
+*/
+struct wwd {
+/* header */
+long *ww_wstat; /* pointer to window status area */
+long *ww_wdef; /* pointer to window definition */
+long ww_chid; /* window QDOS channel lD */
+long *ww_pprec; /* pointer to pointer record */
+long ww_psave; /* saved pointer position *I
+long ww_sparf; /* spare */
+word ww_spar2; /* spare */
+char ww_spars; /* spare */
+char ww_pulld; /* pulldown flag */
+long *ww_splst; /* pointer to sub-window sprite list */
+/* window definition */
+short ww_xsize; /* menu window x size */
+short ww_ysize; /* menu window y size */
+short ww_xorg; /* menu window x origin */
+short ww_yorg; /* menu window y origin */
+struc ww_attr ww_wattr; /* menu window attributes */
+long *ww_psprt; /* pointer to pointer sprite */
+struct ww_iattr wwﬂlattr; /* loose menu item attributes */
+long *ww_help; /* pointer to help definition */
+/* sub_window lists */
+short ww_ninfo; /* number of information sub-windows */
+short ww_ninob; /* number of information objects */
+long *ww_pinfo; /* pointer to info sub-window list */
+short ww_nlitm; /* number of loose menu items */
+long *ww_plitm; /* pointer to loose menu items list */
+short ww_nappl; /* number of application sub-windows */
+
+long *ww_pappl; /* pointer to appl sub-windows list */
+
+ 
+

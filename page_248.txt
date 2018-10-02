@@ -1,0 +1,146 @@
+248 Part III EASYPTR 3 Library Routines
+
+ 
+
+4.0 List of EASYPTR Library routines
+
+Ordered logically
+
+Easy menu managment
+
+Setup
+EM_S ETUP
+EM_CLEAR
+
+Draw
+
+EM_l DRAW
+EM_LD RAW
+EM_MDRAW
+EM_WD RAW
+
+Main menu read
+EM_RPTR
+
+Sub-window menu
+EM_AMCLR
+EM_AMSET
+
+Set WINDOW area
+EM_SWAM l
+EM_SWAPP
+EM_SWH lT
+EM_SWIN F
+EM_SWIOB
+EM_SWLIT
+EM_SWLNK
+EM_SWS EC
+
+
+setup complete working definition
+remove EM_SETUP generated menu
+
+draw info windows
+
+draw loose menu items
+
+draw application sub-window
+
+draw (redraw) complete menu window
+
+EM_SETUP generated menu read
+
+remove sub-window menu
+set up dynamic sub-window menu
+
+set window to sub-window menu item
+set window to application sub-window
+set window to hit area
+
+set window to information sub-window
+set window to information object
+
+set window to loose menu item
+
+link other channel to actual window
+
+set window to sub-window menu section
+
+General menu managment utility routines
+<1. EW_AWlNF
+Q EW_AWSCT
+C EW_CLCHG
+C EW_DRBDR
+
+Utility routines
+
+Q EU_CSTRQ
+C EU_PWMAK
+C. EU_PWTST
+C. EU_QSTRC
+C- EU_RMAWS
+C EU_SLEEP
+C. EU_SMAWS
+C. EU_UNMAN
+
+get application sub-window address
+set menu section control blocks
+clear status bytes change bits
+
+draw current item border
+
+copy C string to QDOS string
+
+make primary window
+
+find primary window
+
+copy QDOS string to C string
+
+read system mouse parameters
+
+use button_sleep thing (if QPACZ present)
+set system mouse parameters
+
+set window channel to unmanaged stage
+
+Page
+
+262
+257
+
+258
+259
+260
+272
+
+261
+
+255
+256
+
+264
+265
+266
+267
+268
+269
+270
+271
+
+281
+282
+283
+284
+
+273
+274
+275
+276
+277
+278
+279
+280
+
+ 
+

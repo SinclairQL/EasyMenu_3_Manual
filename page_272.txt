@@ -1,0 +1,48 @@
+272 Part III EASY/FTP} 3 Library Routines
+
+ 
+
+EM_WDRAW 5,457/sz
+
+Description
+
+Draw (redraw) a complete menu window structure
+
+The initial position parameters are only relevant on the first call after EM__SETUP,
+is. they can be omitted for redraw.
+
+lithe position parameters are both given as -1, then the menu is drawn at the
+actual pointer position, i.e. the initial pointer position defined in the menu
+definition is positionned such that the systems pointer position must not be
+changed. if the menu window would fall outside the window limits (-> iOP_FLlM)
+the position is adjusted accordingly.
+
+Parameter declarations
+short xipos,yipos;
+long err,workdef;
+
+Function call
+err = em_wdraw (xipos,yipos,workdef)
+
+Function return
+
+err —> 2.2
+Parameter call return
+workdef address of working definition 6
+Xipos initial x pointer position 6
+
+-1 actual pointer position "
+yipos initial y pointer position 9
+
+-1 actual pointer position "
+
+" both
+
+Assembler wm.wdraw mewdraw
+d0 ? error code
+d1 initial x,y position or -1
+
+a4 pointer to working definition
+
+ 
+

@@ -1,0 +1,69 @@
+EASYPTR3 Library Routines Part III 297
+
+ 
+
+5.2 Window working definition
+
+£757 will ~ if
+
+/* The structures of a window working definition are defined below.
+
+*
+
+it 3(— 4- =9 3(- Ii- 3% 1' 1‘ 1' at- 1- 3f 3(- 1- 5% =9
+
+:9
+1'
+
+a}
+
+*/
+
+As some of these require dimensional parameters which must be
+defined according to the menu sizes, those definitions are locked!
+
+The window working definition is normally setup from a window
+definition, but may also be setup directly using the structure
+definitions defined below.
+
+EASYMENU generates window definitions which can be transformed
+to a working definition by using the standard window manager
+WM_SETUP routine orthe EM_SETUP library routine.
+
+To allow acces to the working definition, the structure can be
+defined as a pointer, which is filled in by the setup routine.
+
+Some of the following definitions are determined by a dimension. To
+allow usage for most applications, the dimensions are set so high
+that they normally will not be exceeded.
+
+Please alter according to your menu and unlock,
+or define seperately for each menu:
+
+#define UNLOCKED 0
+
+#if UNLOCKED
+
+#define NUMlNFO 32 /* Maximum number of information windows */
+#define NUMlNOB 32 /* Maximum number of information objects */
+
+#define NUMLITM 128 /* Maximum number of loose menu items */
+
+#define NUMAPPL 32 /* Maximum number of application sub-windows */
+#define NUMROWS 128 /* Maximum number of appl sub-window menu rows */
+#define NUMCOLS 512 /* Maximum number of appl sub-window menu
+
+columns */
+
+#define NUMXSCT 8 /* Maximum number of appl sub-window x menu
+
+sections */
+
+#define NUMYSCT 8 /* Maximum number of appl sub-window y menu
+
+sections */
+
+#endif
+
+ 
+

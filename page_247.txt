@@ -1,0 +1,47 @@
+EASYPTR 3 Library Routines Part III 247
+
+III. 4 The EASYMENu Control Library Routines
+
+There are two libraries:
+
+easymenC_lib
+is intended for the C programmer as the routines in this library take the
+parameters from the stack. And
+
+easymenCasm_lib
+which is intended to be used from assembler, as these routines take the
+parameters from the registers.
+Both, the assembler- and the C- -programmer may take great advantage of the
+very easy way to create a menu controlled program.
+The easymenC_ lib routines follow the left to right parameter passing convention
+(see below) and thus can be used with the Metacomco Lattice C and the C68
+compilers as well (and naturally with any other C-compiler using the same
+convenﬂon)
+If these routines are called from assembler (which is also possible), the
+assembler programmer has to ensure himself that the parameters are passed on
+the stack in the right order.
+
+The description of the functions is valid both for C and assembler.
+
+Attention:
+The routines have different prefixes. The meanings are
+
+Prefix EM
+All EM, routines are standard routines to setup and control a menu definition.
+These routines must only be used on a menu setup with EM_SETUP
+
+Prefix EU
+All EU_ routines are utility routines which are not directly coupled with a menu
+definition.
+
+Prefix EW
+
+All EW_ routines can be used on any standard menu working definition, i.e. on a
+definition set up with EM~SETUP or on a definition set up using the standard
+window manager routines as well.
+
+Prefix El
+
+The library also contains these routines, which prepare parameters for
+internal routines written in C. The descriptions can be found in chapter 3.
+

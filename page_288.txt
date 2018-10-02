@@ -1,0 +1,108 @@
+288
+
+Part III
+
+EASYPTR 3 Library Routines
+
+ 
+
+/***************************************************************************I
+
+#define JSR
+extern long
+extern long
+extern long
+extern long
+extern long
+extern long
+struct in_rout {
+
+shod
+
+long
+
+long
+l;
+/* Example:
+* struct in__rout
+*/
+/* Window Definition: */
+#define ENDMlNUS
+#deiine ENDNULL
+#define wda_clear
+#define wda_noclr
+
+20153 /* = $4EBQ == jsr */
+ei_awset();
+
+ei_awdrw();
+
+ei_liact();
+
+ei_awhit();
+
+ei_amact();
+
+ei_awctr();
+
+lump;
+asm_rout;
+c_funct;
+
+aw1 set ={JSR,ei_awset,ec_awset};
+
+-1
+
+/* Structure to define window attributes */
+
+struct
+
+};
+
+wd_waﬂr
+unggnedchar
+char
+
+shon
+
+shon
+
+shon
+
+0
+
+'\x0'
+
+'\x80'
+
+{
+
+wda_clig; /* wda_clear or wda_noclr */
+wda_shdd; /* shadow width */
+wda_borw; /* border width */
+
+wda_borc; /* border colour */
+wda_papr; /* paper colour */
+
+/* Structure to define the item attribute record */
+
+StI’UCt
+
+};
+
+vvd_§nrec
+shon
+shon
+shon
+shon
+
+{
+
+wda_back; /* item background colour */
+wda_ink; /* text ink colour */
+
+wda_blob; /* pointer to blob for pattern */
+wdaﬂpatt; /* pointer to pattern for blob */
+
+ 
+

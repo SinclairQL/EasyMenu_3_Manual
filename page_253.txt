@@ -1,0 +1,61 @@
+EASYPTR3 Library Routines Part III 253
+
+ 
+
+4.7 Primary window (C only)
+
+Normally your C-Program will have the standard l/O channels stdin, stdout and
+stderr already open. It depends on your compiler and eventually special
+parameters whether these channels are opened as one ore more QDOS
+channels.
+
+As your compiler may additionally offer options to redirect these channels from
+the normal console channel (and you may have a good reason to do so), we can
+not rely on that there is a known primary window available.
+
+To assure the existance of a primary window, the EU_PWTST function can be
+called at the beginning of the program. This function returns the QDOS channel
+ID of an existing primary window channel or reports 'err.fdnf', if there is none. If
+you want to know which of the standard channels is the primary window, you
+must compare the found channel [D with the channel ID of the standard
+channel(s) using fgetchidO.
+
+Example:
+
+extern long eu_pwtst();
+
+main()
+{ 
+    long err,pwchid,fgetchid();
+    err=eu,_pwtst(&primchid);   /*you should make an error test */
+    if (err==-7)
+        goto newpw;             /* no primary window found -> open new*/
+    if (err<0)                  /*any other error should be handled by*/
+        myerror();              /*your error routine*/
+
+    /* if you want to know which of the standard channels is the primary */
+    errchid=fgetchid(stderr);
+    if (errchid==pwchid)
+        goto foundpw;           /* and so on */
+
+    newpw:  ...
+
+    foundpw: ...
+}
+
+An other way to get control over the primary window, is to call the EU_PWMAK
+function once at the beginning of the program. This creates a new primary
+window and leaves all other window channels, which are already open,
+unchanged (as secondary windows).
+
+Example:
+
+extern long eu_pwmak();
+main ()
+{
+    long err,pwchid;
+    err=eu_pwmak(&pwchid);  /*now pwchid is the primary window*/
+    ...
+}
+ 
+

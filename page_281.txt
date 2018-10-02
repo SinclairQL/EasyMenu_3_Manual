@@ -1,0 +1,62 @@
+EASYPTR3 Library Routines Part lll 281
+
+EW__AW|NF
+
+ 
+
+Description
+
+Find address of application sub-window working definition and sub-window menu
+status area.
+
+This routine is mainly intended to give access to the menu item status bytes, but
+also the sub-window structure in general.
+
+Parameter declarations
+
+long err,substatus,subworkdef,workdef
+short winum;
+Function call
+
+err: ew_awinf (winum,&substatus,&subw0rkdef,workdef)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+
+winum application sub window number 9
+
+&substatus address of substatus variable 0
+
+substatus ’? menu sub-window
+status area
+
+&subworkdef address of subworkdef variable 0
+
+subworkdef ? address of sub-
+window working def.
+
+workdef address of working definition 0
+
+Assembler ew.awinf eanwinf
+
+d0 ? error code
+
+d1 sub-window number =
+
+a1 ? pointer to menu status bytes
+
+a3 ? pointer to sub-window clef.
+
+a4 pointer to working definition =
+
+Oct” Wt An»- re 24‘ sakes/«M
+
+Q am}, (I:- 3} gag 5w) even OWUM-
+
+ 
+
+ 
+

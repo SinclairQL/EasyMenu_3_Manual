@@ -1,0 +1,22 @@
+EASYPTR3 Library Routines Part III 295
+
+ 
+
+The NUMROW menu object lists for each row are an array of NUMCOL
+menu objects. All objects can (but must not) be in one large list,
+
+where the pointer to the row end points to the same address as the
+pointer to the row start of the next row.
+
+a—a-x-ﬁ
+
+*/
+
+#if UNLOCKED
+struct wdm~objli {
+struct awmobj awmobjx[NUMCOL];
+};
+#endﬂ
+
+ 
+

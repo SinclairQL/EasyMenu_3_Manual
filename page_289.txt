@@ -1,0 +1,168 @@
+EASYPTRIB Library Routines Part III 289
+
+ 
+
+/* Structure to define the item attributes */
+
+struct
+
+};
+
+wd_iattr
+
+shon
+
+shon
+
+struct wd_atrec
+struct wd_atrec
+struct wd_atrec
+
+/* scaling flags */
+
+#define
+#define
+#define
+#define
+#define
+
+/* Repeated window definition record */
+
+Stl‘UCt
+
+};
+
+scal_0_0
+scal__‘l_4
+sca|_2_4
+scal_3_4
+scal__4_4
+
+wd_rept {
+shon
+shon
+shon
+shon
+shon
+
+{
+
+wda_curw;
+wda_cu rc;
+wda_unav;
+
+wda_aval;
+wda_selc;
+
+O
+4096
+8192
+12288
+16384
+
+wd_xmin;
+wd_ymin;
+wd_pinfo;
+wd_plitm;
+wd_pappl;
+
+/* current item border width */
+/* current item border colour */
+/* unavailable attributes */
+
+/* available attributes */
+
+/* selected attributes */
+
+/* invariant, top nibble %0000 */
+/* scale 1:4, top nibble %0001 *l
+/* scale 2:4, top nibble %0010 */
+/* scale 3:4, top nibble %0011 */
+/* scale 4:4, top nibble %0100 */
+
+/* layout x minimum size + scaling */
+
+/* layout y minimum size + scaling */
+
+/* pointer to information sub-windows*/
+/* pointer to loose menu items */
+
+/* pointer to application sub-windows */
+
+/* Fixed part of window definition followed by NUMLAY layouts */
+
+struct
+
+};
+
+whdef
+
+shon
+
+shon
+
+shod
+
+shon
+
+struct wattr
+shod
+
+struct wd_iattr
+shon
+
+struct wd_rept
+shon
+
+{
+wd_xsize;
+wd_ysize;
+wd_xorg;
+wd_yorg;
+wd_wattr;
+wd_psprt;
+wd_lattr;
+wd_help;
+
+/* window x size */
+
+/* window y size */
+
+/* window x origin */
+
+/* window y origin */
+
+/* window attributes */
+
+/* pointer to pointer sprite */
+
+/* loose menu item attributes */
+/* pointer to help window */
+
+wd_rep[NUMLAY]; /* repeated layouts */
+
+endflag;
+
+/* ENDMlNUS */
+
+/* Object types, TEXT may also be TEXT-charpos, where charpos is the
+* position of a character which shall be underlined.*/
+
+#define
+#define
+#define
+#define
+
+TEXT
+SPRITE
+BLOB
+PATTERN
+
+O
+
+2
+4
+6
+
+ 
+

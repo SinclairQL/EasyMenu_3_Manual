@@ -1,0 +1,39 @@
+EASYPTR3 Library Routines Part lll 275
+
+EU_PWTST
+
+ 
+
+Description
+Searches the primary window of the job. if an existing primary channel is found,
+the outline is set to the actual size. "
+
+ 
+
+ 
+
+ 
+
+'i w (e A307 5.4“ a) Io/LFUw
+Parameter declarations " ' . _
+long err,pwchid; Sbﬁﬁj OunJ 6c «\ 3N5 '4‘?
+
+Function call
+err = eu__pwtst (&pwchid);
+
+Function return
+
+err <0 standard QDOS error code, e.g. err.fdnf if no channel found
+Parameter call return
+
+&pwchid address of pwchid variable Q
+
+pwohid ? primary channel ID
+Assembler eu.pwtst > euXpwtst
+
+d0 ? error code
+
+a0 ’? primary chid (7 if dO<>O)
+
+ 
+

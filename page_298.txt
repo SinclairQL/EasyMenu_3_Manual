@@ -1,0 +1,69 @@
+298 Part III
+
+EASYPTR 3 Library Routines
+
+ 
+
+/*
+
+*/
+
+Window attributes
+
+#define DOCLEAR
+#define NOCLEAR
+
+struct ww_attr {
+
+};
+
+unﬁgnedchar
+char
+shon
+shon
+shon
+
+'\XO'
+'\X80'
+
+wwa_clfg;
+
+wwa_shdd;
+wwa_borw;
+wwa_borc;
+wwa_papr;
+
+/* clear flag to clear window */
+
+/* window clear flag */
+/* shadow width */
+
+/* border width */
+
+/* border colour */
+
+/* papaer colour */
+
+ 
+
+/* Menu item attributes
+
+*/
+
+struct ww__atrec{
+short wwa_back; /* item background colour */
+short wwa_ink; /* item ink colour */
+long *wwa_blob; /* pointer to blob for pattern */
+long *wwa_patt; /* pointer to pattern for blob */
+
+};
+
+struct ww_iattr{
+short wwa_curw; /* current item border width */
+short wwa_curc; /* current item border colour */
+struct ww__atrec wwa_unav; /* unavailable item attributes */
+struct ww_atrec wwa_aval; /* available item attrributes */
+struct ww__atrec wwa_selc; /* selected item attributes */
+
+ 
+

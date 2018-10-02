@@ -1,0 +1,33 @@
+266 Part III EASYPTR .3 Library Routines
+
+EM__SWH|T
+
+Description
+Set the WINDOW size and position of the menu channel to the actual hit area
+(the main menu area).
+
+ 
+
+Parameter declarations
+
+short paper,ink;
+long err,workdef;
+Function call A
+
+err = em_swhit (workdei,paper,ink)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition 0
+paper paper/strip colour to set E
+
+ink ink colour to set E
+
+Assembler
+Push parameters and call EM_SWHlT or use wm.swhit.
+
+ 
+

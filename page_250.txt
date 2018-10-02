@@ -1,0 +1,49 @@
+250 Part III EASYPTR3 Library Routines
+
+ 
+
+4.4 EASYMENCasm Library routines (assembler only)
+
+To make life a little bit easier for assembler programmers a special
+
+easymenCasm_lib
+
+library is available, which contains special variants of the EM_, EU_ and EW_
+routines.
+
+These take the parameters directly from the registers.
+
+Routines not present here can be used either by pushing the parameters or use
+of the window manager routines directly (e.g. wm.swapp, )
+
+There are two labels for each routine, one where the underscore is replaced by a
+full stop and one by an X. This is to allow usage of the routines with assemblers
+which do not allow a full stop in a label name.
+
+The easymenCasm_lib library has external references into the easymenC_Iib
+library.
+
+Therefore both libraries must be present in the linker control file:
+
+LIBRARY fle_easymenCasm_lib
+LIBRARY fle_easymenC_lib
+
+in this order!
+
+Both the easymenC_lib library routines and the easymenCasm_lib library
+routines use exatly the same extended working definition.
+
+Therefore it is possible to use both types of routines within the same program!
+The result area is accessed using the offset definition of the extended working
+definition (normally as offsets from a4) -> keys_addwdef
+
+The buffer area is only intended for temporary data and may be used by the
+application program as well.
+
+The result area is used to pass values back.
+
+But the three longwords from w_flag and the linked list pointer w_link
+must never be changed!
+
+ 
+

@@ -1,0 +1,78 @@
+308 Part III
+
+EASYPTR 3 Library Routines
+
+ 
+
+/* The pointer record is part of the menu status area. The same
+
+*
+
+struct ptr_rec {
+long
+
+shod
+shon
+shon
+
+unsgnedchar
+undgnedchar
+unﬁgnedchar
+un§gnedchar
+unﬁgnedchar
+unﬁgnedchar
+shon
+shon
+shon
+shon
+
+ws p_c h id;
+wsp_swn r;
+wsp_xpos;
+wsp_ypos;
+
+wsp_kstr;
+wsp_kp rs;
+wsp_evnt;
+wsp_weve;
+wsp_seve;
+wsp_peve;
+wsp_xsiz;
+wsp_ysiz;
+wsp_xorg;
+wsp_yorg;
+
+structure is used by the iop.rptrtrap#3 routine
+________________ */
+
+/* channel ID of window
+
+the pointer is in */
+
+/* number of sub-window the
+pointer is in or -1 */
+
+/* pointer x position relative
+
+to main or sub-window origin */
+/* pointer y position relative
+
+to main or sub-window origin */
+/* code of key stroke or 0 */
+
+/* code of key pressed or 0 *l
+/* event vector first byte 0 */
+
+/* event vector window byte */
+/* event vector sub—window byte */
+/* event vector pointer byte */
+/* sub-window x size */
+
+/* sub-window y size */
+
+/* sub-window x origin */
+
+/* sub-window y origin */
+
+ 
+

@@ -1,0 +1,35 @@
+258 Part III EASYPTR 3 Library Routines
+
+EM_IDRAW
+
+Description
+Draw (redraw) one or several of the first 32 information sub-windows.
+Each window is represented by the corresponding bit in the select parameter and
+is redrawn, if the bit is clear, e.g.
+
+select=-2 /*$FFFFFFFE, i.e bit 2 clear*/
+redraw window no. 2.
+
+ 
+
+Parameter declarations
+long err,select,workdef; ’\
+
+Function call
+err = em_idraw (select,workdef)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition 0
+select draw window(s) no. x if bit x clear 0
+Assembler
+
+Use wm.idraw.
+
+E/LILMAN 9- Emma“
+
+ 
+

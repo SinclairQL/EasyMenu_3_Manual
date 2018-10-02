@@ -1,0 +1,45 @@
+262 Part lll EASYPTR 3 Library Routines
+
+ 
+
+...EM_RPTR
+
+Assembler em.rptr eerptr
+
+d0 ? error code, 27 menu removed
+a0 ? chid (? if d0<>0)
+a1 ? pointer to status (? if d0<>0)
+a2 ? pointer to wman (? if d0<>0)
+a4 Pointer to working definition =
+
+EM_SETUP 12/191 “Ac
+
+Description
+
+Set up a working definition from an EASYMENU generated menu definition.
+
+- use a given window channel or open a new one.
+
+- calculate memory size of working definition and reserve memory
+
+- setup menu structure from window definition
+
+- if action-, draw-, hit- and control-routine pointers are zero, set default routines
+- return size of actual layout and channel lD
+
+- return address of status area, result area and working definition
+
+The working definition is extended below it's start for additional data. The
+complete format of this area is described in chapter 5.
+
+Please notice that the structure of the working definition itself is absolutely
+standard, i.e. all standard window manager operations can be performed, but
+then the result area is not filled in.
+
+All EM_ routines will report the error 'err.fdnf' if they are called with a working
+definition not set up with EM_SETUP!
+
+...EM__SETUP
+
+ 
+

@@ -1,0 +1,74 @@
+(312 Part III EASYPTR 3 Library Routines
+
+ 
+
+5.5 EASYMENC and EASYMENCasm extended working definition offsets
+add.wdef equ $70 .
+w_link equ -add.wdef ;long linked list start
+
+w_buffer equ -$Bc ;buffer
+
+;free equ -$20 ;3 bytes
+
+w_olmen equ -$29 ;used differently
+
+w_lastwi equ -$28 ;4 words last appl item x/y size/origin
+w_result equ -$20
+
+w_ptrpos equ -$20 ;long: x,y ptrpos
+
+w_keycde equ -$1c ;word: key
+
+w_evenum equ -$1 a ;word: event number
+
+w_wintyp equ -$18 ;word: window type -2 event, -1 loose, >=0 appl
+w_itemno equ -$16 ;word: item number
+
+w_rnovdis equ -$14 ;long: x,y move distance
+
+w_colrow equ -$1O ;long: column/row
+
+w_flag equ —$0c ;word $AF FE
+
+w_event equ -$0a ;byte: events to return
+
+w_implch equ -$09 ;byte: -1 implicit channel, 0 given channel
+w_chadr equ -$08 ;long: channel address
+
+wmwman equ -$O4 ;long: pointer to window manager
+
+5.6 EASYMENCasm assembler library routines overview
+
+The easymenCasm_/ib library contains special variants of the EM_, EU_ and
+
+EW_ routines. These take the parameters directly from the registers. Routines
+
+not present here can be used either by pushing the parameters or use of the
+
+window manager routines directly (e.g. wm.swapp, )
+
+There are two labels for each routine, one where the underscore is replaced by a
+
+full stop and one by an X (for assemblers which do not allow a. in a label name).
+{ The easymenCastib library has external references into the easymenC_/ib
+_1‘library.ﬁTherefore both libraries must be present in the linker control file:
+
+LIBRARY fle_easymenCasm_lib
+LIBRARY fle_easyrnenC_lib
+
+in this order!
+
+Both'the easymenCJib library routines and the easymenCasm_/ib library
+routines use exatly the same extended working definition. Therefore both type of
+roiitine‘s‘can be used within the same program!
+
+The result area is accessed using the offset definition of the extended working
+definition (normally as offsets from a4) ->keys__addwdef.
+
+The buffer area is only intended for temporary data and may be used by the
+application program as well. The result area is used to pass values back.
+
+The desription of the functions is the same as for the easymenC_/ib library.
+
+ 
+

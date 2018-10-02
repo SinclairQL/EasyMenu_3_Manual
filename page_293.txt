@@ -1,0 +1,127 @@
+EASWEDTR3 Library Routines Part III 293
+
+ 
+
+/* Application sub-window definition */
+struct wd_appl {
+
+shon
+shon
+shon
+shon
+struct wattr
+shod
+shon
+shon
+shon
+shon
+shon
+
+shon
+
+char
+char
+
+wda_xsiz;
+wda_ysiz;
+wda_xorg;
+wda_yorg;
+wda_watt;
+wda_pspr;
+wda_setr;
+wda_draw;
+wda_hit;
+wda_ctrl;
+wda_nxsc;
+
+wda_nysc;
+
+wda_skey;
+wda_ext;
+
+/* sub—window x size + scaling */
+/* sub-window y size + scaling */
+/* sub-window x origin + scaling */
+/* sub-window x origin + scaling */
+/* sub-window attributes */
+
+/* pointer to pointer sprite */
+
+/* pointer to setup routine */
+
+/* pointer to draw routine */
+
+/* pointer to hit routine */
+
+/* pointer to control routine */
+
+/* maximum number of x ctrl
+sections */
+
+/* maximum number of y ctrl
+sections */
+
+/* sub-window selection key */
+
+/* spare */
+
+The control block for pannable sub-windows must only be present if
+
+wdaﬁnxsc is not 0*/
+
+struct wda_pcrl pan_ctrl;
+
+The control block for scrollable sub-windows must only be present if
+
+wda_nysc is not 0*/
+
+structwda_pcrl sr|_ctrl;
+
+The menu definition block must only be present if there is a standard
+menu in the sub-window
+
+shon
+struct wd_iattr
+shon
+shon
+shon
+shon
+shon
+shon
+shon
+shon
+shon
+
+wda_mstt;
+wda_iatt;
+wda_ncol;
+wda_nrow;
+wda_xoff;
+wda_yoff;
+wda_xspc;
+wda_yspc;
+wda_xind;
+wda_yind;
+wda_rowl;
+
+/* pointer to menu status block */
+/* menu item attributes */
+
+/* number of actual columns */
+/* number of actual rows */
+
+/* X offset to start of menu */
+
+/* y offset to start of menu */
+/* pointer to X spacing list */
+
+/* pointer to y spacing list */
+
+/* pointer to x index list */
+
+/* pointer to y index list */
+
+/* pointer to menu row list */
+
+ 
+

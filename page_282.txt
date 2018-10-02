@@ -1,0 +1,62 @@
+282 Part lll EASYPTIF’R3 Library Routines
+
+EW__AWSCT
+
+Description
+
+This routine can be used to setup the application sub-window section control
+blocks. This routine should be called after the menu definition has been set up
+(e.g. with WM_SMENU). But it must be called with applwdef pointing to the same
+location (wwa_mstt) in the working definition as passed to EC_AWSET.
+Therefore this pointer must be copied to applwdef before calling WM_SMENU,
+
+e.g:
+
+ 
+
+long applwdef=subworkdef;
+err =wm_smenu (xscale,yscale,status,wman,&subwindef,&subworkdef);
+
+err =ew_awsct (startcol,startrow,panctrl,scrollctrl,applwdef,&subworkdef);
+
+Parameter declarations
+
+long err,panctrl,scrollctrl,applwdef,subworkdef;
+short startcol,startrow;
+Function call
+
+err =ew_awsct (startcol,startrow,panctrl,scrollctrl,applwdef,&subworkdef);
+
+Function return
+
+err 0
+
+Parameter call ' return
+startcol start column Q
+stanrow start row Q
+panctrl pointer to pan ctrl block 0
+
+>0 setup at this address
+
+:0 setup in working definition
+
+-1 use pointer (wwa_part) in sub-window working definition
+scrollctrl pointer to scroll ctrl block 25
+
+>0 setup at this address
+
+=0 setup in working definition
+
+—1 use pointer (wwa_part) in sub-window working definition
+applwdef pointer to application sub-window working 6
+
+menu definition as passed to EC_AWSET
+&subworkdef address of subworkdef variable
+subworkdef running pointer to next free space in = or updated if panctrl
+
+working definition or scrollctrl = O
+
+EW__AWSCT
+
+ 
+

@@ -1,0 +1,58 @@
+274 Part III EASYPTR 3 Library Routines
+
+EU_PWMAK
+
+Description
+
+Try to make a known primary channel.
+
+This only works if there is no or only 'still unused channels open, e.g. at the
+beginning of a C program after the startup module has only opened some
+standard channels.
+
+Do not call EU_PWTST before EU_PWMAK, because then an existing channel
+might have been marked to be the primary.
+
+The procedure will break if there is already an existing primary channel marked.
+In this case a new opened channel is closed again, and the error 'err.fdiu' is
+returned.
+
+ 
+
+if the primary channel shall be accessible using standard C IO routines (e.g.
+fprinti, ...), then a channel should be opened using fopeno, and the channel ID
+found with fgetchidO should be passed to EU_PWMAK.
+
+Parameter declarations
+long err,pwchid;
+
+Function call
+err = eu_pwmak (&pwchid);
+
+Function return
+
+err <0 standard QDOS error code
+
+Parameter call return
+
+&primchid address of primchid variable Q
+
+primchid -1 open new primary channel ID
+else take this
+
+Special error code meaning "‘
+
+-7 err.fdnf no window manager present
+
+-9 err.idiu another primary channel already exists
+
+-15 err.ipar no pointer interface present
+
+Assembler eu.pwmak euXpwmak
+
+d0 ? error code
+
+a0 chid or -1 primary chid
+
+ 
+

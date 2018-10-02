@@ -1,0 +1,86 @@
+EASYPTR3 Library Routines Part III 309
+
+ 
+
+/* Menu status area
+
+*
+
+struct
+
+ws_wstat {
+long
+
+long
+
+struct ptr_rec
+long
+
+shon
+
+long
+
+shod
+
+shon
+shon
+
+shon
+shon
+shon
+shon
+uannedchar
+
+*ws_work;
+*ws_wdef;
+ws_point;
+ws_ptpos;
+ws_wmode;
+*ws_ciact;
+
+ws_cite m;
+
+ws_cibrw;
+ws_cipap;
+
+wsp_cihxs;
+wsp_cihys;
+wsp_cihxo;
+wspﬂcihyo;
+
+ 
+
+*/
+
+/* pointer to working area */
+
+/* pointer to window definition */
+
+/* pointer record */
+
+/* absolute pointer position */
+
+/* display mode for this window */
+/* pointer to current item action
+routine */
+
+/* current item sub-window number
+*/
+
+/* current item border width */
+
+/* paper colour behind current item
+or border colour -> WM.DRBDR */
+/* hit area x size *I
+
+/* hit area y size */
+
+/* hit area x origin in sub-window */
+/* hit area y origin in sub-window */
+
+ws~litem[NUMLOOSE]; /* loose menu item status
+
+block */
+
+ 
+

@@ -1,0 +1,68 @@
+252 Part III EASYPTR 3 Library Routines
+
+ 
+
+4.5 Action Routines
+
+All loose menu and application sub-window menu items may have an action
+routine which is processed implicitiiy by the window manager routine WM.RPTR
+which is called by EM_RPTR.
+
+The EM_SETUP routine allows a very flexible handling of action routines. In
+general there are four different ways to install an action routine:
+
+a) if the action routine pointer in the menu definition is zero, as it is in a menu
+definition generated from EASYMENU, then EM_SETUP will set a
+universal action routine, which saves the item data to the result area and
+then causes EM_RPTR to return
+
+b) if the action routine pointer is zero smiths selection key of a loose item is
+one of the following standard events, then EM_SETUP will set an internal
+action routine:
+
+code    event           action
+------------------------------------------
+3       cancel          remove menu definition
+5       move            move window
+6       change size     show change size sprite, after HlT set
+                        change data in result area and return
+7       sleep           call button sleep thing (if QPAC2 present)
+
+c) if the action routine pointer is zero _an_d the selection key of a loose menu
+item is the ASCII code (not the window manager event code) of the key
+generating the events mentionned in b), then the selection key is changed
+to the standard event code and the universal action routine as in a) is set:
+
+ 
+
+ASCII code  event key   is changed to event code
+------------------------------------------------
+27          ESC         3
+245         CTRL F4     5
+241         CTRL F3     6
+233         CTRL F1     7
+
+Thus the items can be called with the above event keys but then a return
+from EM_RPTR follows. The program then may call an own action routine.
+
+d) if the action routine pointer is not zero, i.e. an action routine pointer has
+been set manually into the source listing generated with EASYSOURCE,
+then EM_SETUP will set this pointer.
+
+4.6 Action routines written in C
+
+As the window manager routine WM.RPTR, which processes the menu call,
+expects internal action routines to be written in assembler, it is only possible to
+use an action routine written in C if it is called from an assembler routine which
+prepares the parameters for it and ensures the return parameters.
+
+The method how this is can be done from within C, is described in chapter 3.1
+and with -> WM_RPTR.
+
+This method is only recommended for advanced programmers.
+
+The easier method is to call the action routines after EM_RPTR. Therefore the
+data in the result area is used to decide which action routine is to be called.
+
+ 
+

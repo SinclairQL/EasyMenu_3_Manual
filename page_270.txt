@@ -1,0 +1,40 @@
+270 Part III EASYPTR 3 Library Routines
+
+ 
+
+EM_SWLNK
+
+Description
+
+Set the WINDOW size and position of an unmanaged (outline not set) window
+channel otherthan the menu channel to the actual WlNDOW size and position of
+the menu channel.
+
+The WINDOW of the menu channel may have been set to the size and position
+of a menu element using EM_SWAMl, EM_SWAPP, EM_SWHIT, EM_SWINF,
+EM_SWIOB, EM_SWLIT or EM_SWSEC.
+
+Parameter declarations
+long err,winchid,workdef;
+
+Function call
+err = em_swlnk (workdef,winchid)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition 6
+winchid link channel ID (cpkﬂ) E
+Special error code meaning
+
+-1 err.nc wrong working definition structure
+-9 err.fdiu channel is managed.
+
+Assembler
+
+Push parameters and call EM_SWLNK.
+
+ 
+

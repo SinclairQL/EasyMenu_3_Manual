@@ -1,0 +1,77 @@
+306 Part III EASYPTR 3 Library Routines
+
+ 
+
+/* The menu row list is an array of pointers to the start and end of the menu
+object list for each row
+
+A menu row list entry is defined by:
+
+*/
+struct wwm_mrow {
+
+long *wwm_rows; /* pointer to row start */
+long *wwm_rowe; /* pointer to row end */
+l;
+
+/* A menu row list for N rows set up by the program may be initialized
+
+* as follows:
+
+* struct wwm_mrow aw1_mrow[NUMROW] ={
+
+* {wwm_aw1 r1 ,wwm_aw1r1+NUMCOL}
+
+* {... },
+
+* {wwm_aw‘l rN,wwm_aw‘l rN+NUMCOL}
+
+* };
+
+* To access an existing definition, define pointers to the structures
+
+* and fill them in with the pointers found in the existing application
+
+sub-window definition.
+
+at-
+\
+
+/* For each pannable and/or scrollable sub-window, wwp_part and/or wws_part
+* point to a sub-window section control block:
+
+* ————————————————————————————
+
+* For each section there is a sub-window section control block record
+*/
+
+struct wss_scbr {
+
+short wss_spos; /* section start pixel position */
+
+shOrt wss_sstt; /* section start column or row */
+
+short wss_ssiz; /* section size (number of columns
+or rows) */
+
+};
+
+/* The whole block for one dimension consists of a short integer which
+* contains the actual number of sections, followed by a record for
+
+* each section
+
+* struct wss_part{
+
+* short wss_nsec; number of actual sections
+
+* struct wss_scbr aw1_pcb[NUMXSEC];
+
+* };
+
+* Please notice that there must be enough space forthe maximum number of
+
+sections (wwa_nxsc or wwa_nysc in the application sub-window definition).*/
+
+ 
+

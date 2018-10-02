@@ -1,0 +1,23 @@
+278 Part III EASYPTR 3 Library Routines
+
+ 
+
+EU_SLEEP
+
+Description
+This function calls the button_sleep thing of QPACZ if present.
+
+Parameter declarations
+long err;
+
+Function call
+err: eu_sleep ()
+
+Function return
+err -> 2.2
+
+Parameter call return
+none
+
+ 
+

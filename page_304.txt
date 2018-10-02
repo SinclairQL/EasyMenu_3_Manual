@@ -1,0 +1,82 @@
+304 Part III EASYPTR 3 Library Routines
+
+ 
+
+/* Menu sub-subwindow definition */
+
+long *wwa_mstt; /* pointer to menu status block */
+
+struct ww_iattr wwa_iatt; /* item attributes */
+
+short wwa_ncol; /* number of columns */
+
+short wwa_nrow; /* number of rows */
+
+short wwa_xoff; /* x offset to start of menu */
+
+short wwa_yoff; /* y offset to start of menu */
+
+union wwa_xspa {
+short wwa_xhsp[2]; /* -ve regular x hit size/x spacing */
+long *wwa_xspc; /* pointer to x spacing list */
+
+} wwa_xspv;
+
+union wwa_yspa {
+short wwa_yhsp[2]; /* -ve regular y hit size/y spacing */
+long *wwa_yspc; /* pointer to y spacing list */
+
+} wwa_ysuov;
+
+long *wwa_xind; /* pointer to x index list */
+
+long *wwa_yind; /* pointer to y index list */
+
+long *wwa_rowl; /* pointerto menu row list */
+
+};
+
+/* The menu object spacing list for each dimension is an array of short
+* integers for the object hit size and object spacing
+
+ 
+
+* _____ ________ ________ */
+struct wwm_spac{
+
+short wwm_size; /* object hit size */
+
+short wwm_spce; /* object spacing */
+
+/* A spacing list for N columns of a menu setup by the program may be
+* initialized as follows:
+
+struct wwm_spac aw1_xspl[NUMCOL] ={
+{colt size,col1 spacing},
+{...,...},
+
+{coleize,colepacing}
+
+};
+
+on the other hand, if wwa_aw1 is a pointer to an existing structure
+of type wwa_appl:
+
+struct wwa_appl Wwajwf;
+
+a pointer to an existing row spacing list can be defined as:
+
+struct wwm_spac *aw1_xspl[wwa_aw1->wwa_nrow];
+
+and the pointer to the x spacing list is initialized as:
+aw1_xspl=wwa_aw1 ->wwa_xspc;
+
+ 
+
+3% 51- 3(- i- >f 3(- =i~ 5(- 3(- al- 56 3(- 4‘ 3(-
+
+3(-
+\
+
+ 
+

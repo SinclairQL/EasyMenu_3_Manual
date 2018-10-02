@@ -1,0 +1,50 @@
+EASYPTR 3 Library Routines Part III 267
+
+EM__SWINF
+
+ 
+
+Description
+
+Set the WINDOW size and position of the menu channel to an information sub-
+window. ~
+
+If ink==-1, then only the area is set, otherwise the paper and ink colours are set
+and the over status is set to 0.
+
+Parameter declarations
+
+short infonum,ink;
+long err,workdef;
+Function call
+
+err: em_swinf (workdef,infonum,ink)
+
+Function return
+
+err -> 2.2
+Parameter call return
+workdef address of working definition Q
+infonum information sub-window number Q
+ink -1 set window area only 9
+
+or
+
+ink colour (the paper colour is taken from
+the window definition)
+
+Assembler
+Push parameters and call EM_SWlNF or use wm.swinf.
+
+’“ﬂwl
+
+mess»; Amt meal c,
+; lo ‘49 th‘M is-
+
+t
+
+/" J
+z.
+
+ 
+

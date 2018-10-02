@@ -1,0 +1,41 @@
+EASYPTRS Library Routines Part III 265
+
+EM_SWAPP
+
+ 
+
+Description
+
+Set the WINDOW size and position of the menu channel to an application sub-
+window.
+
+lt ink==-1, then only the area is set, otherwise the paper and ink colours are set
+and the over status is set to 0.
+
+Parameter declarations
+
+short applnum,ink;
+long err,workdef;
+Function call
+
+err = em_swapp (workdef,applnum,ink)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition Q
+applnum application sub~window number 6
+
+ink -1 set window area only G
+
+or
+ink colour (the paper colour is taken from
+the window definition)
+
+Assembler
+Push parameters and call EM_SWAPP, or use wm.swapp.
+
+ 
+

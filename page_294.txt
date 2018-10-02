@@ -1,0 +1,58 @@
+294 Part III EASYPTR 3 Library Routines
+
+ 
+
+/* The menu object spacing list is just an array of spacing records */
+
+struct mospac {
+short wdm_size; /* object hit size + scaling */
+short wdm_spce; /* object spacing + scaling */
+};
+/* The spacing list for each dimension is just an array of spacing
+
+* records, e.g.
+
+* struct mospac aw1_xspc[NUMCOL] = {
+
+* {40,42},
+
+* {48,50},
+
+* one for each column
+
+* };
+
+* Regular spacings can be given in two negative short integers
+* instead of a list, e.g.
+
+* struct mospac aw1_xspc ={—40,-42};
+
+*/
+
+/* The menu row list is an array of pointers to the row menu object lists
+
+* start and end
+
+* struct mrowl {
+
+* short wdm_rows; pointer to object row list start
+* short wdm_rowe; pointer to object row list end
+* } aw_mrowl[NUM ROW];
+
+*/
+
+/* The menu object record is identical to the correspendlng part
+in the loose menu item definition*/
+
+struct awmobj {
+char wdm_xjst; /* object x justification */
+char wdm_yjst; /* object yjustification */
+char wdm_type; /* object type TEXT/SPRITEI... */
+unsigned char wdm_skey; /* selection key */
+short wdm_pobj; /* pointer to object */
+short wdm_item; /* item number */
+
+short wdm_pact; /* pointer to action routine */
+
+ 
+

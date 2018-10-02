@@ -1,0 +1,45 @@
+EASYPTR3 Library Routines Part lll 277
+
+EU_RMAWS
+
+ 
+
+Description
+Read system mouse acceleration and wakeup speed.
+Should eventually be used before EU__SMAWS.
+
+Parameter declarations
+short accel,wakeup;
+long chid;
+
+Function call
+err = eu_rmaws (chid,&accel,&wakeup)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+
+chid channel ID Z
+
+&accel address of accel variable 6
+
+accel ? actual mouse
+
+acceleration
+&wakeup address of wakeup variable
+wakeup ? actual mouse
+wakeup speed
+
+Assembler eu.rmaws eueraws
+
+d0 ? error code
+
+d1 ? actual mouse acceleration
+d2 '7 actual mouse wakeup speed
+
+a0 chid =
+
+ 
+

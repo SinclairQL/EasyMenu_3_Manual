@@ -1,0 +1,46 @@
+EASYPTR3 Library Routines Part III 285
+
+ 
+
+lll.5 Data structures
+
+5.0 Extended working definition, result area, item numbers
+
+An additional work area is set up by EM_SETUP before the working definition.
+The format is defined as a structure definition in the header file easy_h.
+
+This area also contains the result area which is the most important part. The
+address of the result area, which is defined as an array of short integers, is
+returned by EM_SETUP.
+
+All item and sub-window numbers start from zero!
+
+Result area
+result[O] x pointer position (absolute coordinates)
+result[1] y pointer position (absolute coordinates)
+result[2l key code
+result[3] event number (see below)
+result[4] return type
+-2 return caused by event
+-1 return from loose menu item action
+>=O return from application sub-window hit, ctrl, action
+sub-window number
+result[5] item number (numbering from zero)
+application sub-window menu items are numbered from top/left
+to bottom/right.
+
+on return from an action on the pan/scroll arrows or bars, a special
+pan scroll item number is returned (see below).
+result[6] x move distance after a move window/change size call.
+hit position on the bar, after an action on sub-window menu bars
+-1 hit on arrows if sub-window menu action
+result[7] y move distance after a move window/change size call
+length of the bar, after an action on sub-window menu bars
+-1 hit on arrows if sub-window menu action
+result[8] column number after sub-window menu item hit
+-1 hit on bars or arrows
+result[9] row number after sub-window menu item hit
+-1 hit on bars or arrows
+
+ 
+

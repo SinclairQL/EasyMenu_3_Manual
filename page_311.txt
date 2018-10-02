@@ -1,0 +1,106 @@
+EASYPTR 3 Library Routines Partlll 311
+
+ 
+
+5.4 Pointer Interface extended channel definition block
+
+The pointer interface handles pointer operations in a window on an extended
+channel definition block. The size of this block is $30 = 48 bytes. The block is
+inserted immediately after the channel definition header which is $18 = 24 bytes
+long. The data should never be altered by application programs directly, but only
+using the appropriate pointer interfacel/O trap #3 routines.
+
+struct sd_extchd {
+
+shon
+
+shon
+
+shod
+
+shon
+
+shon
+
+shon
+
+shon
+
+shon
+
+union primary
+long
+long
+
+long
+
+long
+
+long
+
+long
+
+long
+
+char
+
+unsbned char
+
+char
+char
+char
+
+};
+
+sd_xhits;
+sd_yhits;
+sd_xhito;
+sd_yhito;
+sd_xouts;
+sd_youts;
+sd_xouto;
+sd_youto;
+{
+sd_prwlb;
+sd_pprwml
+sd_prwlt;
+sd_sewll;
+sd_wsave;
+sd_wssiz;
+sdmwwdef;
+sd_wlstt;
+sd_prwin;
+
+sd_wmode;
+sd_mysav;
+sd_wmove;
+
+/* x hit size */
+
+/* y hit size */
+
+/* x hit origin */
+
+/* y hit origin */
+
+/* x outline size */
+/* y outline size */
+/* x outline origin */
+/* y outline origin */
+
+/* primary linked list up */
+/* pointer to primary window */
+/* primary linked list down */
+/* secondary linked list */
+/* pointer to save area */
+/* size of save arae */
+/* pointer to working definition *I
+/* window lock status */
+/* bit 7 primary window
+bit 0 well behaved */
+/* window mode */
+/* —1 if implicite save area */
+/* window move flag */
+
+ 
+

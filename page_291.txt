@@ -1,0 +1,58 @@
+EASYPTR3 Library Routines Part III 291
+
+ 
+
+/* The information object list is an array of information object records
+* terminated by an end word of -1*/
+
+#if UNLOCKED
+
+struct wd_ioii {
+struct wd_iobr wd_iobs[NUMlOB];
+short endflag;
+
+};
+
+#endif
+
+/* Information window record */
+struct wd_info {
+
+short dexsiz; /* sub-window x size + scaling */
+short wdi_ysiz; /* sub-window y size + scaling */
+short wdi_xorg; /* sub-window x origin + scaling */
+short wdi_yorg; /* sub-window x origin + scaling */
+struct wattr wdi_watt; /* sub-window attributes */
+
+short wdi_pobl; /* pointer to object list */
+
+l;
+
+/* The information sub-window list is just an array of information
+* sub-window records terminated by an endflag of -1 */
+
+#if UNLOCKED
+
+struct dewli {
+struct wd_info wd_infos[NUMlNFO];
+short endflag;
+
+};
+
+#endﬂ
+
+/* The application sub-window list, is a list of word pointers to
+* application sub-window definitions */
+
+#if UNLOCKED
+
+struct wd_applli {
+short wd_appls[NUMAP PL];
+short ENDNULL;
+
+};
+
+#endﬂ
+
+ 
+

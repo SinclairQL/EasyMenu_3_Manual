@@ -1,0 +1,38 @@
+300 Part III EASYPTPR 3 Library Routines
+
+ 
+
+/* The main part of the working definition can (but must not) be followed
+
+* by the list to information sub-windows, information sub-window objects,
+* loose menu items, application sub-window list and application sub-window
+* definitions.
+
+information sub-window definition
+
+*/
+struct wwi_info{
+short wwi_xsiz; /* sub-window x size */
+short wwi_ysiz; /* sub-window y size */
+short wwi_xorg; /* sub-window x origin */
+short wwi__yorg; /* sub-window y origin */
+struct ww__attr wwi__watt; /* sub-window attributes */
+long *wwi_pobl; /* pointer to information object list *I
+
+l;
+
+, /* The Information sub-window list is an array of information sub-window
+* definitions + 1 dummy element with wwi_xsize==-1 which signals
+* the end of the list
+
+it
+
+*/
+
+#if UNLOCK
+struct wwi__info *wwi_infl[NUMlNFO+1];
+
+#endif
+
+ 
+

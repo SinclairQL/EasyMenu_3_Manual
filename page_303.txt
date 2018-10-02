@@ -1,0 +1,56 @@
+EASYPTR3 Library Routines Part lll 303
+
+ 
+
+/* The application sub-window definition list is an array of pointers to application
+* sub-window definitions. The last element must be 0 to signal the end of the
+
+ 
+
+ 
+
+* list
+* _____________________ */
+#if UNLOCK
+long *wwa_pappl[NUMAPPL+1];
+#endif
+/* Application sub—window definition
+*_____ */
+struct wwa_appl{
+/* Main window definition */
+short wwa_xsiz; /* sub-window x size */
+short wwa~ysiz; /* sub-window y size */
+short wwa__xorg; /* sub-window x origin */
+short wwa_yorg; /* sub-window y origin */
+struct ww‘attr wwa_watt; /* sub-window attributes */
+long *wwa__pspr; /* pointer to pointer sprite */
+long *wwagdraw; /* pointer to draw routine */
+long *wwa_hit; /* pointer to hit routine */
+long *wwa_ctrl; /* pointer to control routine */
+short wwa_nxsc; /* maximum number of x sections */
+short wwa_nysc; /* maximum number of y sections */
+char wwa_skey; /* selection keystroke */
+char wwa_spare1; /* spare */
+short wwa_spare2; /* spare */
+/* Pannable sub-window control definition */
+long *wwp_part; /* pointer to pan control block */
+short wwp_insz; /* index hit size */
+short wwp_icur; /* index current item border width */
+short wwp_icic; /* index current item border colour */
+struct ww_atrec wwp_iiat; /* index item attribute record */
+short wwp_psac; /* pan arrow colour */
+short wwp_psbc; /* pan bar background colour */
+short wwp_pssc; /* pan bar section colour */
+/* Scrollable sub-window control definition */
+long *wws_part; /* pointer to scroll control block */
+short wws_insz; /* index hit size */
+short wws__icur; /* index current item border width */
+short wws_icic; /* index current item border colour */
+struct ww_atrec wws_iiat; /* index item attribute record */
+short wws_psac; /* scroll arrow colour */
+short wws_psbc; /* scroll bar background colour */
+
+short wws_pssc; /* scroll bar section colour */
+
+ 
+

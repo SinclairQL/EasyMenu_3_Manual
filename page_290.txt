@@ -1,0 +1,48 @@
+290 Partlll EASYPTR 3 Library Routines
+
+ 
+
+/* Loose menu item record */
+
+struct wd_|itmr {
+short dexsiz; /* hit area x size + scaling */
+short wdi_ysiz; /* hit area y size + scaling */
+short wdi_xorg; /* hit area x origin + scaling */
+short wdi_yorg; /* hit area y origin + scaling */
+char wdi_xjst; /* object x justification */
+char wdi_yjst; /* object y justification */
+char wdi_type; /* object type TEXT/SPRITEI... */
+unsigned char wdi_skey; /* selection key */
+short wdi_pobj; /* pointer to object */
+short wdi_item; /* item number */
+short wdi_pact; /* pointer to action routine */
+};
+
+/* The loose menu items list is just an array of NUMLOOSE loose menu items.
+* the list is terminated by -1 */
+
+#if UNLOCKED
+struct wd_lili {
+structwd_litm wd_|itms[NUMLOOSEj;
+short endflag; /* ENDMlNUS */
+};
+#endﬂ
+
+/* Information object record */
+struct wd_iobr {
+
+short wdo_xsiz; /* object x size + scaling */
+short wdo_ysiz; /* object y size + scaling */
+short wdo_xorg; /* object x origin + scaling */
+short wdo_yorg; /* object x origin + scaling */
+char wdo_type; /* object type TEXT/SPRlTEl... */
+char spareo; /* spare */
+short wdo_ink; /* text ink colour or */
+
+/* short wdo_comb; pattern or blob to combine */
+char wdo_csiz; /* x character size */
+char wdo_ycsz; /* y character size */
+short wdo_pobj; /* pointer to object */
+
+ 
+

@@ -1,0 +1,50 @@
+EASYPTR3 LibraryRoutines Partlll 305
+
+ 
+
+/* Menu object list entry definition
+
+The object types for menu items are:
+-n text underline n.th character
+text no underline
+
+sprite
+
+blob
+
+pattern
+
+items are numbered rowwise from top left to bottom right starting
+from O.
+
+abi-at-zt-#:£-a->t-:t-*
+GANG
+
+*/
+
+struct wwm_mobj{
+short wwm_xjst; /* objext x justification rule */
+short wwm_yjst; /* objext y justification rule */
+char wwm_type; /* object type */
+char wwm_skey; /* selection keystroke */
+long *wwm_pobj; /* pointer to object */
+short wwm_item; /* item number */
+long *wwm_pact; /* pointer to action routine */
+
+};
+
+/* The menu object list is an array of pointers to the start and end of the
+* menu object list for each row.
+
+* All menu objects can (but must not) be arranged in one list.
+
+*/
+
+#if UNLOCKED
+
+struct wwm_mobj wwm_aw1 r1[NUMCOL+1];
+
+#endﬁ
+
+ 
+

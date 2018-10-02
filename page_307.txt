@@ -1,0 +1,67 @@
+,/\
+
+EASYPTR 3 Library Routines Part III 307
+[£457 («LSA ~ H
+5.3 Window status area
+
+/* The window status area is used to control an existing menu as defined
+
+* with the window working definition.
+
+The status area is normally set up by wm.setup.
+
+The control data is filled in or altered by wm.rptr and the action
+
+routines in case.
+
+The loose menu item status block, which is a byte for each loose menu
+item, follows immediately after the window working area.
+
+Other status or control areas, e.g. for application sub-window menus, may
+also follow, but those pointers are held in the application sub-window
+definition.*/
+
+ 
+
+3% X- X' X” 9f 3“
+
+#define NUMLlTEM 512
+/* The possible menu item statuses are defined in 'easy_h' */
+/* The event vector is part of the pointer record as defined below.*/
+
+/* Event vector pointer byte */
+
+#define keyclick 1
+
+#define keydown 2
+
+#define keyup 4
+
+#define ptrmove 8 /* pointer moved */
+#define ptroutw 16 /* pointer out of window */
+#define ptrinw 32 /* pointer in window */
+
+/* Event vector sub-window byte */
+
+#define split 1
+#define join 2
+#define pan 4
+#define scroll 8
+
+/* Event vector window byte */
+
+#define DO 1
+
+#define CANCEL 2
+
+#define HELP 4
+
+#define MOVE 8
+
+#define CHGSZ 16 /* change size */
+#define SLEEP 32
+
+#define WAKE 64
+
+ 
+

@@ -1,0 +1,86 @@
+--\
+
+EASYPTR-B Library Routines Part lll 257
+
+ 
+
+...EM_AMSET
+
+Assembler em.amset
+
+d0 ?
+
+d3 number of columns
+
+d4 number of rows
+
+d5 maximum number of x sections
+
+d6 maximum number of y sections
+
+a0 pointer to X (column) spacing list
+
+a1 pointer to y (row) spacing list
+
+a2 pointer to menu object list
+
+a3 pointer to sub-window definition
+
+a4 pointer to working definition
+[1157 r/em Q
+
+Description
+
+emXamset
+error code
+
+II H H il ll H II
+
+EM_CLEAR
+
+Clear a menu working definition setup with EM_SETUP.
+
+if an implicite channel was opened, the channel is closed, otherwise only the
+menu definition is unset, the memory reserved for the working definition is
+released and in the case of a secondary window the screen area beyond the
+menu is restored and the window channel is declared to be unmanaged.
+
+Parameter declarations
+
+long
+
+err,workdef;
+
+Function call
+err = em_clear (workdef)
+
+Function return
+
+err
+
+-> 2.2
+
+Parameter call
+
+workdef
+
+address of working definition
+
+Assembler em.clear
+
+d0
+a4
+
+?
+pointer to working definition
+
+return
+9
+
+emXclear
+
+error code
+7
+
+ 
+

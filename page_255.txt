@@ -1,0 +1,31 @@
+EASYPTR 3 Library Routines Part III 255
+
+EM_AMCLR
+ 
+
+Description
+Clear application sub-window menu.
+
+All internal routine pointers as well as an existing menu structure are removed.
+If the menu was set up with EM_AMSET, then also the memory reserved for row-
+lists, status- and control-areas is released.
+
+Parameter declarations
+long err,subwdef,workdef;
+
+Function call
+err = em_amclr (subwdef,workdef)
+
+Function return
+err -> 2.2
+
+Parameter call                              return
+subwdef address of sub-window definition    0
+workdef address of working definition       0
+
+Assembler   em_amclr                            emXamclr
+d0          ?                                   error code
+a3          pointer to sub-window definition    =
+a4          pointer to working definition       =
+
+

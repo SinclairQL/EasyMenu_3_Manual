@@ -1,0 +1,48 @@
+260 Part III EASYPTR 3 Library Routines
+
+ 
+
+EM_MDRAW EA“ ”0m
+
+Description
+
+Draw (redraw) an application sub-window menu.
+
+The select flag decides whether all items or only those items which have the
+refresh bit (bit 0 in the menu item status byte) set are redrawn.
+
+Parameter declarations
+
+short select;
+long err,subworkdef,workdef;
+Function call
+
+err: em_mdraw (select,subworkdef,workdef)
+
+Function return
+
+err —> 2.2
+
+Parameter call return
+
+select 0 draw all E
+-1 draw selected 0
+
+subworkdef address of sub-window definition 6
+
+workdei address of working definition Q
+
+Assembler em_mdraw emedraw
+
+d0 ? error code
+
+d3 0 draw all, -1 draw selected =
+
+a0 '? chld
+
+a3 pointer to sub-window definition
+
+a4 pointerto working definition
+
+ 
+

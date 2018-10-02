@@ -1,0 +1,10 @@
+254 Part III EASYPTR 3 Library Routines
+
+ 
+
+4.8 The routines
+
+Following the routines in alphabetical order.
+
+ 
+

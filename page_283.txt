@@ -1,0 +1,54 @@
+EASYPTR3 Library Routines Part III 283
+
+ 
+
+...EW_AWSCT
+
+Assembler ew.awsct eanwsct
+
+d0 ? error code
+
+d1 start row =
+
+d2 start column =
+
+a1 pointer to pan control block or O or -1 pointer to pan ctrl block
+
+a2 pointer to scroll control block or 0 or -1 pointer to scroll ctrl block
+
+as ptr. to sub-window definition+$64 (wwa_mstt) =
+
+a4 running pointer to working definition updated (a3 = 0 only)
+EW CLCHG
+
+Description
+
+Utility routine to clear the change bits of the menu status bytes. These are not
+cleared by WM_M DRAW or WM_LDRAW!
+
+Please notice that items which have the change bit set are not selectable, even if
+the status is available.
+
+Parameter declarations
+long err,subworkdef,workdef;
+
+Function call
+err = ew_clchg (subworkdef,workdef);
+
+Function return
+
+err -> 2.2
+Parameter call return
+subworkdef pointer to sub-window definition 0
+>0 application sub-window
+=0 loose menu items
+workdef pointer to working definition 6
+Assembler ew.clchg echlchg
+d0 ? error code
+at ? pointer to item status bytes
+a3 ptr. to sub-window definition, 0 loose =
+
+a4 pointer to working definition =
+
+ 
+

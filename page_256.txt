@@ -1,0 +1,58 @@
+256 Part III EASYPTR 3 Library Routines
+
+EM_AMSET
+
+Description
+Setup application sub-window menu.
+This only works if there is no menu structure in the sub-window (->EM_AMCLR).
+
+Use EWAWINF to find the address of the sub-window.
+This routine should not be called from within the application sub-window setup
+routine or any other internal routine.
+The routine sets default internal routine pointers, as described for EM_SETUP.
+The spacing lists for each dimension consist of two short integer values for each
+column (row) giving the hit size and the spacing to the next element.
+Please notice, that the spacing must at least be as large as the hit size + the
+current item border width (which must be doubled in x direction as usual).
+
+Regular spacings can be given in one entry in negative values, e.g.
+
+short xspc[2]={—40,—42};
+
+Please notice, that the bar and arrow colours are taken as defined with the \
+window in EASYMENU, but they can be altered using the application sub—window
+structure definition.
+If the pointer to the menu object list is zero, then only the pan/scroll bars are set
+up. Use EM_MDRAW to draw the menu.
+
+ 
+
+Parameter declarations
+
+short nxsc,nysc,ncol,nrow;
+short xspc[ncol][2],yspc[nrow][2]; 
+long err,subwdef,workdef;
+struct wwm_mobj mobjlist[nrow][ncol];
+
+Function call
+err: em__amset (nxsc,nysc,ncol,nrow,xspc,yspc,mobjlist,subwdef,workdef)
+
+Function return
+err -> 2.2
+
+Parameter   call                                return
+
+nxsc        maximum number of x sections            0
+nysc        maximum number of y sections            0
+ncol        number of columns                       0
+nrow        number of rows                          0
+xspc        address of x (column) spacing list      0
+yspc        address of y (row) spacing list         0
+mobjlist    address of contiguous menu object list  0
+subwdef     address of sub-window definition        0
+workdef     address of working definition           0
+
+ 
+
+ 
+

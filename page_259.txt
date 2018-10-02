@@ -1,0 +1,35 @@
+EASYPTR3 Library Routines Partlll 259
+
+EM_LDRAW
+
+ 
+
+Description
+
+Draw (redraw) loose menu items.
+
+If select is -1, the only those items are redrawn, which have the refresh bit (bit 0)
+in the status byte set.
+
+All refresh bits are cleared.
+
+Parameter declarations
+
+short select;
+long err,workdef;
+Function call
+
+err = em_ldraw (select,workdef)
+
+Function return
+
+err -> 2.2
+Parameter call return
+workdef address of working definition 0
+select 0 draw all 6
+
+-1 draw selected 6
+Assembler
+
+Use wm.ldraw.
+

@@ -1,0 +1,44 @@
+EASYPTR 3 Library Routines Part lll 269
+
+EM_SWLIT
+
+ 
+
+Description
+
+Set the WlNDOW size and position of the menu channel to a loose menu item.
+If sta ==-1, then only the area is set, otherwise the paper and ink colours are set
+and the over status is set to 0.
+
+Parameter declarations
+
+short litmnum,stat;
+long err,workdef;
+Function call
+
+err: em_swlit (workdef‘,litmnum,stat)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+workdef address of working definition 6
+litmnum loose menu item number 6
+
+stat -1 set window area only G
+
+OI‘
+
+item status which colours to set
+0 available colours
+
+16 unavailable colours
+
+128 selected colours
+
+Assembler
+Push parameters and call EM_SWLlT or use wm.swlit.
+
+ 
+

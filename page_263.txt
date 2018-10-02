@@ -1,0 +1,53 @@
+EASYPTR3 LibraryRoutines Part III 263
+
+ 
+
+...EM_SETUP
+
+Parameter declarations
+
+short xsiz,ysize;
+
+long err,chid,status,result,workdef;
+
+extern long menudef;
+
+Function call
+
+err: em_setup (&xsize,&ysize,&chid,&menudef,&status,&result,&workdef)
+
+[15"] also wit“ a N ht“?
+
+Function return '7 _
+err _>2.2 / CM (J45 I19 (LE-Acid 3. l (”'(x\\‘( 5%.
+
+Parameter call return
+&xsize address of xsize variable Z
+xsize >0 x pixel size layout x size
+:0 take default size
+&ysize address of ysize variable 6
+ysize >0 >y pixel size layout y size
+:0 take default size
+&chid address of chid variable Q
+chid 0 use or open primary window QDOS channel ID
+-1 open new window channel <- ban'r an ‘rleNK ‘ “amp «1’
+else use existing QDOS channel l4" 315"“ . W
+&status address of status variable Z
+status ? address of status area
+&result address of result variable Q
+result ? address of result area
+menudef pointer to menu definition 6
+&workdef address of workdef variable 6
+workdef ? addr of working def
+Assembler em.setup emeetup
+d0 ? error code
+d1 x,y size or 0 or -1 x,y size
+a0 chid or O or -1 chid
+a1 ? pointer to status area
+a2 ’? pointer to window manager
+a3 pointer to menu definition =
+
+a4 ? pointer to working definition
+
+ 
+

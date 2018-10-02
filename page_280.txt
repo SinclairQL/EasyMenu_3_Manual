@@ -1,0 +1,39 @@
+280 Partlll EASYPTR 3 Library Routines
+
+ 
+
+EU_UNMAN
+
+Description
+
+Declare secondary channel to be unmanaged and give up internal save area if in
+use (->IOP_WRES).
+
+This only works if there is no menu working definition installed (—>WM_UNSET,
+EM_CLEAR).
+
+Parameter declarations
+long err,chid;
+
+Function call
+err = eu_unman (chid)
+
+Function return
+
+err -> 2.2
+
+Parameter call return
+
+chid channel lD E
+
+Special error code meaning
+
+—1 err. no primary window
+
+Assembler eu.unman euXunman
+d0 ? error code
+
+a0 chid =
+
+ 
+

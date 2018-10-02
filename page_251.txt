@@ -1,0 +1,91 @@
+EASYPTFR3 Library Routines Partlll 251
+
+ 
+
+EASYMENC extended working definition offsets
+
+add.wdef
+w_link
+w_buffer
+
+;free
+
+w_olmen
+w_lastwi
+w_result
+w_ptrpos
+w_keycde
+w_evenum
+w_wintyp
+w_itemno
+w_movdis
+w_colrow
+
+w_flag
+
+w_event
+w_implch
+w_chadr
+w_wman
+
+equ
+equ
+equ
+
+equ
+
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+
+equ
+
+equ
+equ
+equ
+equ
+
+$70
+
+-add.wdef ;long linked list start
+
+-$6c ;buﬁer
+
+-$2c ;3 bytes
+
+—$29 ;used differently
+
+-$28 ;4 words last appl item x/y size/origin
+-$20
+
+-$20 ;long: x,y ptrpos
+
+-$1c ;word: key
+
+-$1a ;word: event number
+
+-$18 ;word: window type -2 event, -1 loose, >=0 appl
+-$16 ;word: item number
+
+-$14 ;long: x,y move distance
+
+-$10 ;long: column/row
+
+-$Oc ;word $AFF E
+
+-$Oa ;byte: events to return
+
+-$09 ;byte: -1 implicit channel, 0 given channel
+-$08 ;long: channel address
+
+-$04 ;long: pointer to window manager
+
+ 
+

@@ -1,0 +1,76 @@
+EASYPTR3 Library Routines Partlll 313
+
+ 
+
+Register do on return is always 0 or an error code if nothing else is
+mentionned. All registers not mentionned are preserved!
+
+Register C_all Return
+
+d0 ? error code
+
+em.amclr emXamclr .
+
+a3 pointer to sub-window definition =
+
+a4 pointer to working definition =
+
+em.amset emXamset
+
+d3 number of columns =
+
+d4 number of rows =
+
+d5 maximum number of x sections =
+
+d6 maximum number of y sections =
+
+a0 pointer to x (column) spacing list =
+
+a1 pointer to y (row) sopcing list =
+
+a2 pointer to menu object list =
+
+a3 pointer to sub-window definition =
+
+a4 pointer to working definition =
+
+em.clear emXclear
+
+a4 pointer to working definition =
+
+em.mdraw emedraw
+
+d3 0 draw all, -1 draw selected =
+
+a0 ? chid . ., l . V
+a3 pointer to sub-window definition = . V 7‘ P“
+34 pointer to working definition = ' ’
+em.rptr eerptr
+
+d0 27 menu removed
+
+d1 events to return 2 ' ; .,
+a0 ? chid (? if d0<>Q)
+a1 ? pointer to status (‘fif d0<>0)
+a2 ? pointer to wman (? if d0<>:Q)
+a4 pointer to working definition = '
+em.setup emeetup
+
+d1 x,y size or 0 or -1 x,y size
+
+a0 chid or 0 or -1 chid
+
+a1 ? pointer to status area V .
+a2 ’? pointer to window manager.
+as pointer to menu definition = ‘ ‘ N
+a4 ? pointer to working definition
+em.wdraw emedraw ' ‘
+d1 initial x,y position or -1
+
+n In
+
+a4 pointer to working definition
+
+ 
+

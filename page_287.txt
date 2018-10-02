@@ -1,0 +1,69 @@
+EASYPTR 3 Library Routines Part lll 287
+
+ 
+
+E451 Mbb - H
+
+5.1 Menu window definition
+
+5(- 4- 31- $1- 4- 5‘- 3.- SI- 5(- 31— Sir 3" ’6 X' 3(- it}
+
+3(- 3l- 3(- Il- 3% 3(— 4- at 3% =6 5" 5i-
+
+*-
+\
+
+This is the structure of a window manager menu definition.
+As this definition contains short (word) pointers, it is not
+suitable to be defined from within a C-module.
+
+EASYMENU generates window definitions in relocatable form, so
+normally only the pointer to the definition must be defined
+as an external label within the C-module which manages the menu.
+
+Anyway the description is given here in the form of
+structure definitions.
+
+Assembler programmers may substitute
+
+long by dc.l
+short by dc.w
+char by dc.b
+
+to get the equivalent definitions in assembler.
+
+The definitions are mainly intended for informational or debugging
+
+purposes.
+
+Advanced programmers may adapt and use the definitions if a very complex
+program requires this.
+
+Please notice that, if you want to replace the default
+
+setup, draw, control or hit routines by C written routines,
+
+you must initialize in_rout structures which simply consist
+
+of an assembler instruction to jump to a suitable library
+routine which in turn prepares parameters, calls the C—written
+routine and retrieves parameters afterwards.
+
+Dimensional parameters must be altered accordingly
+
+#define UNLOCKED 0
+#define NUMLAY 1
+
+#if UNLOCKED
+
+#define NUMlOB
+#define NUMINFO
+#define NUMLOOSE
+#define NUMAPPL
+
+0000
+
+#endif
+
+ 
+

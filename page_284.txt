@@ -1,0 +1,39 @@
+284 Part lll EASYPTR 3 Library Routines
+
+ 
+
+EW_DRBDR
+
+Description
+
+This routine draws or clears the border around the current item. The routine uses
+or sets the current item information in’the status area (and thus does a little bit
+more than the pure window manager routine).
+
+Parameter declarations
+long err,wman,workdef;
+short colour;
+
+Function call
+err = ew__drbdr (colour,wman,workdef);
+
+Function return
+
+err -> 2.2
+Parameter call return
+colour =-1 clear border (3
+
+0 to 255 draw border in this colour
+wman address of window manager vector base Q
+workdef pointer to working definition 6
+Assembler ew.drbdr ederbdr
+d0 ? error code
+d1.l border colour or -1 to clear =
+a0 ? chid
+a1 ? pointer to status area
+a2 pointer to window manager
+
+a3 pointer to working definition
+
+ 
+

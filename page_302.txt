@@ -1,0 +1,53 @@
+302
+
+Part III
+
+EASYPTR 3 Library Routines
+
+ 
+
+/* Loose menu item definition
+
+ 
+
+ 
+
+* The object types for information objects and loose menu items are:
+* —n text underline n.th character
+* 0 text no underline
+* 2 sprite
+* 4 blob
+* 6 pattern
+*/
+struct wwl_litm{
+short wwl_xsiz; /* hit area x size */
+short wwl_ysiz; /* hit area y size */
+short wwl_xorg; /* hit area x origin */
+short wwl_yorg; /* hit area y origin */
+short wwl_xjst; /* objext x justification rule */
+short wwl_yjst; /* objext y justification rule */
+char wwl_type; /* object type */
+char wwl_skey; /* selection keystroke */
+long *wwl_pobj; /* pointer to object */
+short wwl_item; /* item number */
+long *ww|__pact; /* pointer to action routine */
+
+};
+
+/* The loose menu items list is an array of loose menu item definitions
+
+*
+
+‘k
+
+*/
+
+#if UNLOCKED
+struct wwl_litm *ww|_litl[NUMLITM+1];
+
+#endif
+
++ ,1 dummy item where wwl_xsize==-1 signals the end of the list
+
+ 
+
